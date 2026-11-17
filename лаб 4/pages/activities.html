@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Напрями діяльності — Ірпінська міська рада</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <style>
+        header {
+            position: fixed;
+            top: 0;
+        }
+    </style>
+    <script defer src="../js/activities.js"></script>
+</head>
+<body class="activities-page">
+
+    <header>
+        <img src="../pic/IRPIN.png" width="90" alt="Герб міста Ірпінь">
+        <h1>Виконавчий комітет Ірпінської міської ради</h1>
+        <nav>
+            <a href="main.html"><button type="button">На Головну сторінку</button></a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <section id="activities-carousel" class="carousel-section">
+            <div class="carousel-box">
+                <button type="button" id="carousel-prev" aria-label="Попереднє фото">&#10094;</button>
+                <div class="carousel-slide">
+                    <img id="carousel-img" src="../pic/будівництво.webp" alt="Відбудова Ірпеня">
+                </div>
+                <button type="button" id="carousel-next" aria-label="Наступне фото">&#10095;</button>
+            </div>
+            <p id="carousel-caption"></p>
+        </section>
+
+        <h2>Напрями діяльності установи</h2>
+
+        <section id="activities-search-section" class="search-section">
+            <label for="activity-search">Пошук напряму діяльності:</label>
+            <div class="search-controls">
+                <input type="text" id="activity-search" placeholder="Введіть назву напряму...">
+                <button type="button" id="search-btn" title="Пошук" aria-label="Пошук">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </button>
+            </div>
+        </section>
+        <p id="search-empty" class="search-empty">Напрямів діяльності за таким запитом не знайдено.</p>
+        
+        <ul>
+            <li id="activity-1" class="activity-item">
+                <h3>1. Відбудова інфраструктури та будівництво</h3>
+                <img src="../pic/будівництво.webp" alt="Відбудова Ірпеня" width="400">
+                <p>Коротке повідомлення: Реалізація програм відновлення пошкоджених житлових будинків та соціальних об'єктів. Проектування нових укриттів.</p>
+                <p>Зв'язок з державними органами влади: <a href="https://mtu.gov.ua/">Міністерство розвитку громад, територій та інфраструктури України</a>.</p>
+            </li>
+            
+            <li id="activity-2" class="activity-item">
+                <h3>2. Соціальний захист населення</h3>
+                <img src="../pic/соц.webp" alt="Соціальна служба" width="400">
+                <p>Коротке повідомлення: Надання соціальних гарантій внутрішньо переміщеним особам, ветеранам війни та багатодітним сім'ям.</p>
+                <p>Зв'язок з державними органами влади: <a href="https://www.msp.gov.ua/">Міністерство соціальної політики України</a>.</p>
+            </li>
+
+            <li id="activity-3" class="activity-item">
+                <h3>3. Освіта та культура</h3>
+                <img src="../pic/культура.webp" alt="Заклади освіти Ірпеня" width="400">
+                <p>Коротке повідомлення: Організація навчального процесу в умовах воєнного стану, забезпечення шкільних автобусів та укриттів у закладах освіти.</p>
+                <p>Зв'язок з державними органами влади: <a href="https://mon.gov.ua/">Міністерство освіти і науки України</a>.</p>
+            </li>
+        </ul>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p><small>&copy; 2026 Виконавчий комітет Ірпінської міської ради.</small></p>
+    </footer>
+
+</body>
+</html>
